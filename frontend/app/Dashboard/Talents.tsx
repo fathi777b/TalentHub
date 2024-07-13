@@ -29,17 +29,7 @@ const Talents = () => {
         console.log(error);
       });
   };
-  // // Function to handle talent update
-  // const handleUpdate = (id: number , newdata :Object) => {
-  //   axios.put(`http://127.0.0.1:5000/api/talents/${id}`, newdata).then((response) => {
-  //     console.log('Talent updated successfully', response.data)
-  //     setRefetch(!refetch); // Toggle refetch to trigger useEffect
-  //   }).catch((error) => { console.log(error) })
-  // };
-  // const handleUpdate = (id: number) => {
-  //   console.log(`Update talent with id ${id}`);
-  // };
-
+  
   const handleDelete = (id: number) => {
     axios.delete(`http://127.0.0.1:5000/api/talents/${id}`)
       .then((response) => {
